@@ -3950,3 +3950,10 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+#generic-hero-image {
+  width: 50% !important;   /* change to 40% if you want smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto;          /* centers the image */
+}
