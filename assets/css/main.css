@@ -3957,3 +3957,31 @@ input, select, textarea {
   display: block;
   margin: 0 auto;          /* centers the image */
 }
+
+/* Desktop Styles (Your existing Option B) */
+.float-left {
+    float: left;
+    margin: 15px;
+    width: 150px;
+    height: auto;
+}
+
+.float-right {
+    float: right;
+    margin: 15px;
+    width: 150px;
+    height: auto;
+}
+
+/* Mobile Styles (Overrides the above for screens smaller than 600px) */
+@media screen and (max-width: 600px) {
+    .float-left, 
+    .float-right {
+        float: none;        /* Disables floating */
+        display: block;     /* Ensures it acts like a block element */
+        width: 100%;        /* Image takes full screen width */
+        margin: 20px 0;     /* Adds space above and below, removes side margins */
+        max-width: 100%;    /* Prevents image from overflowing */
+        height: auto;       /* Maintains aspect ratio */
+    }
+}
