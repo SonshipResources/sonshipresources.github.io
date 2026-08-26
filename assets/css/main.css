@@ -3959,7 +3959,7 @@ input, select, textarea {
 }
 
 #generic2-hero-image {
-  width: 70% !important;   /* change to 40% if you want smaller */
+  width: 80% !important;   /* change to 40% if you want smaller */
   height: auto;
   display: block;
   margin: 0 auto;          /* centers the image */
