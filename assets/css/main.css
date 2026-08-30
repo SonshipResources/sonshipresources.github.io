@@ -3979,10 +3979,6 @@ input, select, textarea {
   margin: 0 auto;          /* centers the image */
 }
 
-li::marker {
-  font-weight: bold;
-}
-
 /* Desktop Styles (Your existing Option B) */
 .float-left {
     float: left;
