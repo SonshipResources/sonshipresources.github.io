@@ -3972,6 +3972,13 @@ input, select, textarea {
   margin: 0 auto;          /* centers the image */
 }
 
+#invitation-hero-image {
+  width: 70% !important;   /* change to 40% if you want smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto;          /* centers the image */
+}
+
 /* Desktop Styles (Your existing Option B) */
 .float-left {
     float: left;
