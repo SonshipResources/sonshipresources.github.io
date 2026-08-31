@@ -3951,6 +3951,11 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+/* Force bold for <strong> and <b> tags */
+strong, b {
+    font-weight: 700 !important;
+}
+
 #generic-hero-image {
   width: 40% !important;   /* change to 40% if you want smaller */
   height: auto;
