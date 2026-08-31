@@ -3984,6 +3984,18 @@ strong, b {
   margin: 0 auto;          /* centers the image */
 }
 
+/* Desktop: enough space to clear the busy area */
+.graphic-spacer {
+  height: 120px;   /* adjust to match what your 6 <br>s gave you */
+}
+
+/* Mobile: less (or more) space to match the scaled graphic */
+@media (max-width: 767px) {
+  .graphic-spacer {
+    height: 60px;   /* tune this until text clears the patchy zone on mobile */
+  }
+}
+
 /* Desktop Styles (Your existing Option B) */
 .float-left {
     float: left;
