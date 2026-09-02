@@ -3996,11 +3996,12 @@ display: block;
     height: 110px;   /* tune this until text clears the patchy zone on mobile */
   }
 }
-/* Tighten vertical rhythm between sections */
-.spotlights > section,
-.wrapper > .inner {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem; /* reduce by ~1 line */
+/* Reduce space between homepage sections */
+section {
+  margin-bottom: 1rem; /* lower this value to tighten more */
+}
+section:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Desktop Styles (Your existing Option B) */
