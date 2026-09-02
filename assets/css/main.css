@@ -3996,6 +3996,12 @@ display: block;
     height: 110px;   /* tune this until text clears the patchy zone on mobile */
   }
 }
+/* Tighten vertical rhythm between sections */
+.spotlights > section,
+.wrapper > .inner {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; /* reduce by ~1 line */
+}
 
 /* Desktop Styles (Your existing Option B) */
 .float-left {
