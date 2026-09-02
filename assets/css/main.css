@@ -3996,12 +3996,10 @@ display: block;
     height: 110px;   /* tune this until text clears the patchy zone on mobile */
   }
 }
-/* Reduce space between homepage sections */
-section {
-  margin-bottom: 1rem; /* lower this value to tighten more */
-}
-section:last-of-type {
-  margin-bottom: 0;
+/* Tighten space between consecutive sections (Forty) */
+#main > * > .inner {
+	padding-top: 3.5em !important;
+	padding-bottom: 1.5em !important;
 }
 
 /* Desktop Styles (Your existing Option B) */
