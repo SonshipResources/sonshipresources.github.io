@@ -3998,8 +3998,8 @@ display: block;
 }
 /* Tighten space between consecutive sections (Forty) */
 #main > * > .inner {
-	padding-top: 3.5em !important;
-	padding-bottom: 1em !important;
+	padding-top: 2em !important;
+	padding-bottom: 1.5em !important;
 }
 
 /* Desktop Styles (Your existing Option B) */
