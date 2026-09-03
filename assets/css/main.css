@@ -4029,3 +4029,5 @@ display: block;
         height: auto;       /* Maintains aspect ratio */
     }
 }
+/* TEMP TEST - remove after verification */
+body { background: #000000 !important; }
