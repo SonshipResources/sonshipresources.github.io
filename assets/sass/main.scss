@@ -73,3 +73,8 @@
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
+
+/* TEMP DIAGNOSTIC TEST — remove after checking */
+body {
+	background: #000000 !important;
+}
