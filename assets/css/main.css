@@ -3993,7 +3993,7 @@ display: block;
 /* Mobile: less (or more) space to match the scaled graphic */
 @media (max-width: 767px) {
   .graphic-spacer {
-    height: 110px;   /* tune this until text clears the patchy zone on mobile */
+    height: 120px;   /* tune this until text clears the patchy zone on mobile */
   }
 }
 /* Tighten space between consecutive sections (Forty) */
