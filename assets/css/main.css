@@ -4047,3 +4047,9 @@ body, #wrapper, #main {
     max-width: none !important;
   }
 }
+/* mobile-only manual line breaks */
+br.mobile-only { display: none; }
+
+@media screen and (max-width: 980px) {
+  br.mobile-only { display: inline; }
+}
