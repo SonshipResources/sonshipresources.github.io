@@ -4053,3 +4053,28 @@ br.mobile-only { display: none; }
 @media screen and (max-width: 980px) {
   br.mobile-only { display: inline; }
 }
+/* Mobile: stack side-by-side buttons vertically */
+@media screen and (max-width: 980px) {
+  ul.actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+  }
+
+  ul.actions li {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  ul.actions li .button {
+    display: block !important;
+    width: 100%;
+    max-width: 28rem; /* optional, keeps from being insanely wide on tablets */
+  }
+
+  /* if you use "fit" style buttons in template */
+  ul.actions.fit li {
+    width: 100% !important;
+  }
+}
