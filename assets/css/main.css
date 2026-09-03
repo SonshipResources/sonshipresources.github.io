@@ -4037,3 +4037,11 @@ body, #wrapper, #main {
 #main > * {
   background: #2a1b33 !important;
 }
+@media screen and (max-width: 980px) {
+  #header .logo span {
+    display: inline !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: none !important;
+  }
+}
