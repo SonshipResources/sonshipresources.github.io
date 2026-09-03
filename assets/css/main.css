@@ -4037,6 +4037,8 @@ body, #wrapper, #main {
 #main > * {
   background: #2a1b33 !important;
 }
+
+/* Keep "Resources Online" visible on mobile */
 @media screen and (max-width: 980px) {
   #header .logo span {
     display: inline !important;
@@ -4044,6 +4046,8 @@ body, #wrapper, #main {
     opacity: 1 !important;
     max-width: none !important;
   }
+}
+
 /* ONLY fix invitation page headings on mobile */
 @media screen and (max-width: 980px) {
   body.invitation h1,
