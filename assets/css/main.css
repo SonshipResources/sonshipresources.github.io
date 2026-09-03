@@ -4045,19 +4045,33 @@ body, #wrapper, #main {
     max-width: none !important;
   }
 }
+/* MOBILE: force long page titles/headings to wrap */
 @media screen and (max-width: 980px) {
-  h1, h2, h3, h4, h5, h6 {
+
+  /* common template wrappers */
+  #banner h1, #banner h2, #main h1, #main h2, #main h3,
+  section h1, section h2, section h3,
+  article h1, article h2, article h3,
+  .inner h1, .inner h2, .inner h3,
+  .major > h1, .major > h2, .major > h3 {
+
+    display: block !important;
     white-space: normal !important;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: normal;
-    hyphens: auto;
-    line-height: 1.25;
+    overflow: visible !important;
+    text-overflow: unset !important;
+
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+
+    max-width: 100% !important;
+    width: 100% !important;
+    line-height: 1.2 !important;
   }
-}
-@media screen and (max-width: 980px) {
-  .major h1, .major h2, .content h1, .content h2 {
-    white-space: normal !important;
-    overflow-wrap: anywhere;
+
+  /* if parent container is forcing single-line/flex squeeze */
+  #banner .inner, #main .inner, .inner, .major {
+    min-width: 0 !important;
+    overflow: visible !important;
   }
 }
