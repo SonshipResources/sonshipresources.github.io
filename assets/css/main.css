@@ -4044,34 +4044,16 @@ body, #wrapper, #main {
     opacity: 1 !important;
     max-width: none !important;
   }
-}
-/* MOBILE: force long page titles/headings to wrap */
+/* ONLY fix invitation page headings on mobile */
 @media screen and (max-width: 980px) {
-
-  /* common template wrappers */
-  #banner h1, #banner h2, #main h1, #main h2, #main h3,
-  section h1, section h2, section h3,
-  article h1, article h2, article h3,
-  .inner h1, .inner h2, .inner h3,
-  .major > h1, .major > h2, .major > h3 {
-
-    display: block !important;
+  body.invitation h1,
+  body.invitation h2,
+  body.invitation h3 {
     white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: unset !important;
-
-    overflow-wrap: anywhere !important;
-    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
     hyphens: auto !important;
-
+    line-height: 1.25 !important;
     max-width: 100% !important;
-    width: 100% !important;
-    line-height: 1.2 !important;
-  }
-
-  /* if parent container is forcing single-line/flex squeeze */
-  #banner .inner, #main .inner, .inner, .major {
-    min-width: 0 !important;
-    overflow: visible !important;
   }
 }
