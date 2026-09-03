@@ -4045,3 +4045,13 @@ body, #wrapper, #main {
     max-width: none !important;
   }
 }
+@media screen and (max-width: 980px) {
+  h1, h2, h3, h4, h5, h6 {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+    line-height: 1.25;
+  }
+}
