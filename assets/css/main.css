@@ -4029,5 +4029,11 @@ display: block;
         height: auto;       /* Maintains aspect ratio */
     }
 }
-/* TEMP TEST - remove after verification */
-body { background: #000000 !important; }
+/* Rich Plum overrides */
+body, #wrapper, #main {
+  background: #1f1427 !important;
+}
+
+#main > * {
+  background: #2a1b33 !important;
+}
