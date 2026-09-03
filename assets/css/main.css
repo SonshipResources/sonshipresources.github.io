@@ -4055,3 +4055,9 @@ body, #wrapper, #main {
     line-height: 1.25;
   }
 }
+@media screen and (max-width: 980px) {
+  .major h1, .major h2, .content h1, .content h2 {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+}
