@@ -3993,7 +3993,7 @@ display: block;
 /* Mobile: less (or more) space to match the scaled graphic */
 @media (max-width: 767px) {
   .graphic-spacer {
-    height: 120px;   /* tune this until text clears the patchy zone on mobile */
+    height: 130px;   /* tune this until text clears the patchy zone on mobile */
   }
 }
 /* Tighten space between consecutive sections (Forty) */
@@ -4076,5 +4076,11 @@ br.mobile-only { display: none; }
   /* if you use "fit" style buttons in template */
   ul.actions.fit li {
     width: 100% !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  h1 {
+    line-height: 1.1 !important;   /* try 1.05 to 1.15 */
+    margin-bottom: 0.6em !important;
   }
 }
