@@ -3957,7 +3957,7 @@ strong, b {
 }
 
 #generic-hero-image {
-  width: 40% !important;   /* change to 40% if you want smaller */
+  width: 55% !important;   /* change to 40% if you want smaller */
   height: auto;
   display: block;
   margin: 0 auto;          /* centers the image */
