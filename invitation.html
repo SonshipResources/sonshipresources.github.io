@@ -52,15 +52,7 @@
 									</header>
 									<p><ul>
 										<li><b>100% FREE</b> and easy-to-use — for PC, Mac, Linux — or Android Tablet & Mobile Apps</li>
-										<li><u>iPhone is a problem</u> but they're working on it. (If iPhone is your <b>ONLY WAY</b>, email Admin for a workaround:) <a id="email-btn" href="#">📧</a>
-<script>
-  const a = "sonsofgreatlove", d = "gmail.com";
-  document.getElementById("email-btn").addEventListener("click", function(e) {
-    e.preventDefault();
-    this.textContent = a + "@" + d;
-    this.href = "mailto:" + a + "@" + d;
-  });
-</script></li>
+										<li><u>iPhone is a problem</u> but they're working on it. (If iPhone is your <b>ONLY WAY</b>, email Admin for a workaround:) <a class="email-btn" href="#">📧</a></li>
 										<li>Small Download and Install footprint</li>
 										<li>Secure one-time Email Sign-up required by Stoat; Custom Usernames, You Choose</li>
 										<li>Good Voice Quality (plus Texting and other Rich Communication Features)</li>
@@ -105,15 +97,7 @@
 									<header class="major">
 										<h2>Address: XX.XXX.XXX.XXX <br class="mobile-only"> ⇦ Copy & Paste this as a <br class="mobile-only">BOOKMARK & Click to Connect</h2>
 									</header>
-									<p><img src="images/TabintheWild.jpg" alt="Description" class="float-left">If, after staying <u>a few minutes</u> in the Lobby, you find there's no <b>Admin</b> on hand to <u>make you</u> a <b>MEMBER</b> (One-Time Requirement) — please EMAIL Admin to set up a convenient time (little Icon here): <a id="email-btn" href="#">📧</a>
-<script>
-  const a = "sonsofgreatlove", d = "gmail.com";
-  document.getElementById("email-btn").addEventListener("click", function(e) {
-    e.preventDefault();
-    this.textContent = a + "@" + d;
-    this.href = "mailto:" + a + "@" + d;
-  });
-</script></p>
+									<p><img src="images/TabintheWild.jpg" alt="Description" class="float-left">If, after staying <u>a few minutes</u> in the Lobby, you find there's no <b>Admin</b> on hand to <u>make you</u> a <b>MEMBER</b> (One-Time Requirement) — please EMAIL Admin to set up a convenient time (little Icon here): <a class="email-btn" href="#">📧</a></p>
 									<p><i>See you in the Server!</i></p>
 									<hr style="border:none; border-top:2px solid currentColor;">
 								</div>
@@ -154,6 +138,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+  const a = "sonsofgreatlove";
+  const d = "gmail.com";
+  document.querySelectorAll('.email-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.textContent = a + "@" + d;
+      this.href = "mailto:" + a + "@" + d;
+    });
+  });
+  </script>
 	</body>
 </html>
